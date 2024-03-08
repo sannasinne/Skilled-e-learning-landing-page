@@ -12,6 +12,8 @@
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
 <body>
+<div class="wrapper">
+<div class="container">  
   <header>
     <img src="./assets/logo-dark.svg" alt="Logo" class="logo">
     <button class="button-header">Get Started</button>
@@ -26,6 +28,8 @@
         <button class="button-banner">Get Started</button>
       </div>
       <picture class="banner-img">
+        <source media="(min-width: 600px)" srcset="./assets/image-hero-tablet.png" class="hero-tablet">
+        <source media="(min-width: 900px)" srcset="./assets/image-hero-desktop.png" class="hero-desktop">
         <img src="./assets/image-hero-mobile.png" alt="">
       </picture>
     </section>
@@ -78,10 +82,14 @@
 
     </section>
   </main>
-
+</div>
   <footer>
-    <img src="./assets/logo-light.svg" alt="Logo">
-    <button class="button-footer">Get Started</button>
+    <div class="container">
+      <img src="./assets/logo-light.svg" alt="Logo">
+      <button class="button-footer">Get Started</button>
+    </div> 
   </footer>
+
+</div>
 </body>
 </html>
